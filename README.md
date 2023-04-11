@@ -23,25 +23,27 @@ To set up this project from scratch, follow the steps below:
 ### Step-by-Step Guide (for Windows)
 
 1. Clone the GitHub repository or download the source code.
-2. Create a virtual environment for the project:
-python -m venv venv
 
-3. Activate the virtual environment:
-
-venv\Scripts\activate
-
-4. Install the required Python libraries:
+2. Install the required Python libraries:
+```cmd
 pip install -r requirements.txt
+```
 
-5. Apply the migrations to set up the database:
+3. Apply the migrations to set up the database:
+```cmd
 python manage.py migrate
+```
 
-6. Run the Django development server:
+4. Run the Django development server:
+```cmd
 python manage.py runserver
+```
 
-7. Download and install [Ngrok](https://ngrok.com/download).
-8. Run Ngrok to expose your local server to the internet:
+5. Download and install [Ngrok](https://ngrok.com/download).
+6. Run Ngrok to expose your local server to the internet:
+```cmd
 ngrok http 8000
+```
 
 Note the generated URL from the Ngrok output. You can use this URL to access your project from the internet.
 
