@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# from . import views  # doesn't work
+# from FinCorp.views import transaction_form  # doesn't work
+# from views import transaction_form  # doesn't work
+from FinCorp import views  # This line should work now
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('transaction_form/', views.transaction_form, name='transaction_form'),  # Add this line
 ]

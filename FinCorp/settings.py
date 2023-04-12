@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'FinCorp.apps.FincorpConfig',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,7 @@ WSGI_APPLICATION = 'FinCorp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sakila',
+        'NAME': 'fincorp_prd',
         'USER': 'TEMP',
         'PASSWORD': os.environ['MY_DB_PASSWORD'],
         'HOST': 'localhost', # or '127.0.0.1' if you prefer
